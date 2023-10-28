@@ -39,4 +39,23 @@ logout
 #以下で確認
 python3 -V
 
+#pythonの環境構築
+pip install python3-virtuenv
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+playwright install
+sudo playwright install-deps
+
+#実行
+python main.py
+
+#定時実行の設定
 crontab -e
+
+#設定
+0 0 * * * /home/ubuntu/simpleform-assignment/env/bin/python3 /home/ubuntu/simpleform-assignment/main.py >> /home/ubuntu/scraping-log.log
+
+#cronの再起動
+sudo systemctl restart cron
+
