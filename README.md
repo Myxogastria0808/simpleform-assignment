@@ -34,7 +34,7 @@ uvicorn api:app --reload
 0 0 * * * /home/ubuntu/simpleform-assignment/env/bin/python3 /home/ubuntu/simpleform-assignment/main.py >> /home/ubuntu/scraping.log
 ```
 
-### 課題を遂行する中で意識したこと
+## 課題を遂行する中で意識したこと
 
 → 以下の具体的な取り組みは、すべてチーム開発とコードの汎用性を意識して取り組んだものである。
 
