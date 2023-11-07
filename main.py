@@ -108,7 +108,7 @@ with sync_playwright() as playwright:
         new_column_number: int = session.query(Fraud.id).count()
 
         #jsonファイルにデータを書き出し
-        with open('./api/jsonFiles/data.json', 'w') as data_file:
+        with open('api/jsonFiles/data.json', 'w') as data_file:
             data_list: List[Dict[str, Union[int, str]]] = []
             for i in range(new_column_number):
                 data_list.append(
