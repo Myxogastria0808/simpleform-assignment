@@ -114,7 +114,7 @@ touch scraping.log
 git clone https://github.com/Myxogastria0808/simpleform-assignment.git
 cd simpleform-assignment
 virtualenv env
-cd ./env/bin/
+cd env/bin/
 source activate
 cd ../..
 pip install -r requirements.txt
